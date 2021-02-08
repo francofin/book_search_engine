@@ -1,0 +1,19 @@
+import gql from 'graphq;-tag';
+
+export const QUERY_ME = gql`
+  {
+    me {
+      _id
+      username
+      email
+      savedBooks {
+          bookId
+          authors
+          image
+          description
+          title
+          link
+      }
+    }
+  }
+`;
